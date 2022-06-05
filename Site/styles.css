@@ -5,14 +5,16 @@
     font-weight: normal;
     font-style: normal;
 }
-body {
-    z-index: 5;
+.characteristics ,
+.content-disruption_cubes , .content-disruption__buy
+{
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .header {
     position: relative;
-    display: block;
     height: 182px;
-    width: 1650px;
+    width: 100%;
 
     background: url(img/bg/hero.jpg) center 25% no-repeat ;
 
@@ -32,7 +34,7 @@ body {
 }
 .header-words1 {
     position: absolute;
-    left: 32.4%;
+    left: 30%;
 
     font-family: 'alegreyasanssc-black-webfont';
     display: inline-block;
@@ -83,14 +85,14 @@ body {
     border-radius: 2px;
 }
 .header-review1  {
-position: absolute;
-right: 10.9%;
-top: 65px;
+    position: absolute;
+    right: 10.9%;
+    top: 65px;
 
-height: 35px;
-width: 14%;
-background-color: rgb(31, 31, 31);
-border-radius: 3px;
+    height: 35px;
+    width: 14%;
+    background-color: rgb(31, 31, 31);
+    border-radius: 3px;
 }
 .header-review , .header-review__email {
     font-family: Arial, Helvetica, sans-serif;
@@ -119,6 +121,244 @@ border-radius: 3px;
     color: orange;
     text-decoration: none;
 }
+
+.content {
+    position: relative;
+    margin-top: 90px;
+}
+    .content-shirtmarket{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 670px;
+    border: 10px solid #ffc92f;
+    background-color: #ffc92f;
+    border-radius: 10px;
+}
+
+.content-shirtmarket__tshirt{
+    position:absolute ;
+    top: 17%;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+        .content-shirtmarket__disruption {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    box-sizing: border-box;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    margin-right: 1px;
+    padding-left: 28px;
+    padding-top: 13px;
+    border-radius: 10px;
+}
+
+
+.content-headerwords {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 1px;
+    color:#fcba2e ;
+    }
+.content-header {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 3px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #212121;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-stretch: ultra-condensed;
+}
+.price {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #212121;
+    box-sizing: border-box;
+    padding-top: 3px;
+    font-stretch: semi-condensed;
+    font-size: 36px;
+    font-weight: bold;
+    width: 95px;
+    height: 45px;
+    background-color: #ffc92f;
+    text-align: center;
+    border-radius: 5px;
+}
+    .content__disruption-border , .content__disruption-border2{
+    position: absolute;
+    right: 0px;
+    border-bottom:1px solid gray;
+    width: 550px;
+    opacity: 50%;
+}
+.content__disruption-border {
+
+    height: 190px;
+}
+.content__disruption-border2{
+
+    height: 425px;
+}
+
+    .content-disruption__characteristics {
+    margin-top: 45px;
+    width: 100%;
+    height: auto;
+}
+
+    .characteristics {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #232222;
+    list-style-type: none;
+    line-height: 35px;
+}
+.content-characteristics__list {
+    padding:0px;
+}
+
+    .content-disruption__size {   
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.content-disruption_cubes {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin-right: 10px ;
+    padding-top: 14px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border:1px solid black;
+    font-weight: bold;
+    opacity: 90%;
+    border-radius:4px ;
+    border-color: rgba(0, 0, 0, 50%)
+}
+    .content-circle-bla , .content-circle-wh , 
+.content-circle-gr , .content-circle-bl , .content-circle-rd
+     {
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: 30px;
+        width:25px ;
+        height: 25px;
+        border: 1px solid black;
+        border-radius: 100%;
+        border-color: rgba(0, 0, 0, 30%);
+    }
+
+.content-circle-bla{
+    background-color:#2f2c25 ;
+}
+.content-circle-wh{
+    background-color:#fcf5e6 ;
+}
+.content-circle-gr{
+    background-color:#529029 ;
+}
+.content-circle-bl{
+    background-color:#39498d ;
+}
+.content-circle-rd {
+    background-color:#d82727 ;
+}
+    .content-disruption__buy1{
+        position: absolute;
+        bottom: 37px;
+        left: 30px;
+
+        margin-top: 35px;
+        height: 50px;
+        width: 210px;
+        background-color: #232323;
+        z-index: 1;
+    }
+.content-disruption__buy {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 28px;
+        letter-spacing: 1px;
+        margin-top: 26px;
+        color: white;
+        height: 50px;
+        width: 210px;
+        background-color: #d82727;
+        font-stretch: ultra-condensed;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 12px;
+        z-index: 2;
+    } 
+.content-disruption__buy:link , .content-disruption__buy:visited {
+        text-decoration: none;
+        color: white;
+    }
+.content-disruption__buy:hover {
+        color: #232323;
+    }
+.content-disruption__buy:active {
+        color: orange;
+    }
+
+.main-catalog {
+    margin-top: 105px;
+
+}
+
+.main-catalog__list {
+    font-family:'Yanone Kaffeesatz', sans-serif;
+    font-size: 28px;
+    position: relative;
+    left: 19%;
+    display: flex;
+}
+.main-catalog__list a {
+    text-decoration: none;
+    margin-right: 100px;
+    padding: 10px 10px 2px 10px;
+    letter-spacing: 1px;
+}
+.main-catalog__list1{
+    background-color: #1b1b1b;
+    margin: 10px ;
+    height: 35px;
+    width: auto;
+}
+.main-catalog__list1:hover {
+    color: white;
+}
+
+        .main-disruption{
+            position: relative;
+            margin: 0 auto;
+            margin-top: 70px;
+            max-width: 1100px;
+            height: 300px;
+            border: 10px solid #ffc92f;
+            background-color: white;
+            border-radius: 10px;
+        }
+.main-disruption__list{
+    position: absolute;
+    width: 364px;
+    height: 100%;
+    border-right:1px solid gray ;
+    opacity: 50%;
+}
+
 
 
 
